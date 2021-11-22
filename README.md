@@ -1,39 +1,42 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Image Source Sheet Package
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+um package para captura de imagems.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* Exibe um Bottom Sheet para capturar uma imagem da câmera ou da galeria.
+* Exibe a visualização da câmera em um widget com um overlay para a captura da face.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Primeiro, adicione `image_source_sheet` como uma [dependência em seu arquivo pubspec.yaml](https://flutter.dev/using-packages/).
 
-## Usage
+### iOS
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+Adicione duas linhas ao `ios/Runner/Info.plist`:
 
-```dart
-const like = 'sample';
+* um com a key `Privacy - Camera Usage Description` e uma descrição de uso.
+* e um com a key `Privacy - Microphone Usage Description` e uma descrição de uso.
+
+Ou em formato de texto, adicione a key:
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>Can I use the camera please?</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Can I use the mic please?</string>
 ```
 
-## Additional information
+### Android
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+Mude a versão mínima do Android SDK para 21 (ou superior) em seu arquivo `android/app/build.gradle`.
+
+```
+minSdkVersion 21
+```
+
+Mude a `compileSdkVersion` para 31 (ou superior) em seu arquivo `android/app/build.gradle`.
+
+```
+compileSdkVersion 31
+```
