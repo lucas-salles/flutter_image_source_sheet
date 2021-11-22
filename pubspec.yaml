@@ -1,6 +1,6 @@
 name: image_source_sheet
 description: Package para captura de imagem.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/lucas-salles/flutter_image_source_sheet
 
 environment:
