@@ -1,11 +1,11 @@
 # Image Source Sheet Package
 
-um package para captura de imagems.
+Um package para captura de imagems.
 
 ## Features
 
-* Exibe um Bottom Sheet para capturar uma imagem da câmera ou da galeria.
-* Exibe a visualização da câmera em um widget com um overlay para a captura da face.
+- Exibe um Bottom Sheet para capturar uma imagem da câmera ou da galeria.
+- Exibe a visualização da câmera em um widget com um overlay para a captura da face.
 
 ## Installation
 
@@ -15,8 +15,8 @@ Primeiro, adicione `image_source_sheet` como uma [dependência em seu arquivo pu
 
 Adicione duas linhas ao `ios/Runner/Info.plist`:
 
-* um com a key `Privacy - Camera Usage Description` e uma descrição de uso.
-* e um com a key `Privacy - Microphone Usage Description` e uma descrição de uso.
+- um com a key `Privacy - Camera Usage Description` e uma descrição de uso.
+- e um com a key `Privacy - Microphone Usage Description` e uma descrição de uso.
 
 Ou em formato de texto, adicione a key:
 
